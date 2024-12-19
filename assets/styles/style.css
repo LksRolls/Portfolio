@@ -1,0 +1,20 @@
+/* ----- Acceuil ----- */
+#Acceuil {
+    margin-top: -1%; 
+}
+
+#Acceuil, #Presentation {
+    padding-top: 75px;
+}
+
+/* ----- Presentation ----- */
+#Presentation img {
+    max-width: 150px;
+    height: auto;
+}
+
+#Presentation p {
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
