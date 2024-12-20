@@ -133,10 +133,20 @@ header {
     justify-content: space-between; /* Assure que le texte est bien espacé */
 }
 
-/* Alignement pour la troisième carte */
-#Parcours .row.justify-content-center {
-    margin-top: 20px; /* Espacement supplémentaire entre les rangées */
+/* Espacement entre les sections Présentation et Parcours */
+#Presentation {
+    margin-bottom: 5%; /* Ajoute un espace dynamique basé sur la hauteur de l'écran */
 }
+
+#Parcours .row:nth-child(1) {
+    margin-bottom: 12%; /* Augmente l'espace entre la première rangée et le reste */
+}
+
+#Parcours h2 {
+    margin-top: 5%; /* Assure un espacement uniforme en haut du titre */
+}
+
+
 
 /* ----- Footer ----- */
 footer {
