@@ -110,7 +110,7 @@ header {
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Ajouté pour des effets au survol */
     display: flex;
     flex-direction: column;
-    justify-content: space-between; /* Assure un espacement uniforme entre les éléments */
+    justify-content: space-between; 
     height: 100%;
 }
 
@@ -131,6 +131,11 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: space-between; /* Assure que le texte est bien espacé */
+}
+
+/* Alignement pour la troisième carte */
+#Parcours .row.justify-content-center {
+    margin-top: 20px; /* Espacement supplémentaire entre les rangées */
 }
 
 /* ----- Footer ----- */
