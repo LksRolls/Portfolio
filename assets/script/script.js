@@ -1,3 +1,4 @@
+//Effet de défilement
 document.addEventListener("DOMContentLoaded", function () {
     const options = {
         strings: ["Developpeur", "Apprenti", "Langatte"],
@@ -8,4 +9,3 @@ document.addEventListener("DOMContentLoaded", function () {
     };
     new Typed("#typed-text", options);
 });
-
