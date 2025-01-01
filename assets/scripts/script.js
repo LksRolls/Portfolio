@@ -9,3 +9,7 @@ document.addEventListener("DOMContentLoaded", function () {
     };
     new Typed("#typed-text", options);
 });
+
+document.addEventListener('DOMContentLoaded', function () {
+    AOS.init(); 
+});

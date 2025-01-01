@@ -1,19 +1,20 @@
 /* ----- General ----- */
 html, body {
-    overflow-x: hidden; /* Empêche le défilement horizontal */
+    overflow-x: hidden; 
+    background-color: whitesmoke;
 }
 
 section {
-    min-height: 100vh; 
+    min-height: 110vh; 
     scroll-margin-top: 50px; 
-    overflow-x: hidden; /* Empêche les débordements dans les sections */
-    padding: 20px; /* Ajouté pour créer un espace intérieur par défaut */
+    overflow-x: hidden; 
+    padding: 20px; 
 }
 
 /* ----- Header ----- */
 .custom-header:not(.active) {
     color: #212529;
-    transition: color 0.3s ease-in-out; /* Ajouté pour un effet de transition en douceur */
+    transition: color 0.3s ease-in-out; 
 }
 
 header img {
@@ -21,7 +22,7 @@ header img {
     height: auto;      
     max-height: 50px;  
     object-fit: contain;
-    margin-right: 15px; /* Ajouté pour espacer le logo des éléments voisins */
+    margin-right: 15px; 
 }
 
 .custom-header:active {
@@ -29,144 +30,218 @@ header img {
 }
 
 header {
-    width: 100%; /* Assure que le header reste dans le viewport */
-    box-sizing: border-box; /* Inclut le padding et la bordure dans la largeur */
+    width: 100%; 
+    box-sizing: border-box;
 }
 
-/* ----- Accueil ----- */
-#Acceuil {
-    margin-top: 0; /* Corrigé pour un alignement plus précis */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    background-color: #f8f9fa; /* Couleur de fond ajoutée pour un contraste doux */
+/* ----- Acceuil ----- */
+
+
+/* ----- PresentationParcours ----- */
+/* ----- Presentation ----- */
+#Presentation .container{
+    margin-top: 10%;
 }
 
-#Acceuil, #Presentation {
-    padding-top: 75px;
-}
-
-/* ----- Présentation ----- */
-#Presentation {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: #ffffff; /* Ajouté pour séparer visuellement cette section */
-}
-
-#Presentation img {
-    max-width: 150px;
-    height: auto;
-    border-radius: 50%; /* Ajouté pour donner une apparence circulaire */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ajouté pour un effet d'ombre subtil */
-}
-
-#Presentation p {
-    font-size: 1rem;
-    line-height: 1.5;
-    text-align: justify; /* Ajouté pour améliorer la lisibilité */
-    color: #6c757d; /* Ajouté pour une couleur de texte douce */
-}
-
-/* ----- Progress Bar ----- */
-.progress {
-    background-color: #e9ecef; /* Couleur de fond neutre */
-    border-radius: 20px; /* Bord arrondi pour un style moderne */
-    overflow: hidden; /* Assure que la barre interne reste dans les limites */
-    margin-bottom: 15px; /* Espacement entre les barres */
-}
-
-.progress-bar {
-    transition: width 0.6s ease; /* Ajouté pour une animation fluide */
-}
-
-.progress-bar.bg-orange {
-    background-color: orange;
-}
-
-.progress-bar.bg-blue {
-    background-color: blue;
-}
-
-.progress-bar.bg-yellow {
-    background-color: yellow;
-    color: black;
-}
-
-.progress-bar.bg-purple {
-    background-color: purple;
-}
-
-.progress-bar.bg-green {
-    background-color: green;
-}
-
-/* ----- Cards (Parcours Section) ----- */
-.card {
-    border: none; /* Retire les bordures pour un look minimaliste */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ajouté pour un effet d'élévation */
-    margin: 15px; /* Espacement entre les cartes */
-    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Ajouté pour des effets au survol */
+/* ----- Parcours ----- */
+#Parcours .card {
+    border: none; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    margin: 15px; 
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
     display: flex;
     flex-direction: column;
     justify-content: space-between; 
     height: 100%;
 }
 
-.card:hover {
-    transform: translateY(-10px); /* Légère élévation au survol */
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Ombre plus marquée au survol */
+#Parcours .card:hover {
+    transform: translateY(-10px); 
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
 }
 
-.card-img-top {
+#Parcours .card-img-top {
     border-top-left-radius: calc(0.25rem - 1px);
     border-top-right-radius: calc(0.25rem - 1px);
     object-fit: cover;
-    height: 200px; /* Hauteur fixe pour uniformiser les cartes */
+    height: 300px; 
 }
 
-.card-body {
+#Parcours .card-body {
     flex-grow: 1;
     display: flex;
     flex-direction: column;
-    justify-content: space-between; /* Assure que le texte est bien espacé */
+    justify-content: space-between; 
 }
 
-/* Espacement entre les sections Présentation et Parcours */
-#Presentation {
-    margin-bottom: 5%; /* Ajoute un espace dynamique basé sur la hauteur de l'écran */
+#Parcours #ExperienceTitle,#FormationTitle{
+    margin: 3% 0;
 }
 
-#Parcours .row:nth-child(1) {
-    margin-bottom: 12%; /* Augmente l'espace entre la première rangée et le reste */
+#Parcours img{
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat;
 }
 
-#Parcours h2 {
-    margin-top: 5%; /* Assure un espacement uniforme en haut du titre */
+/* ---- Projet ---- */
+#Projet .card-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px; 
+    margin: 10px 0;
 }
 
-/* ----- Footer ----- */
-footer {
-    width: 100%; /* Assure que le footer reste dans le viewport */
+#Projet h2 {
+    font-size: 26px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #333;
+    margin-bottom: 1.5%; 
+}
+
+#Ecole, #Perso {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 30px; 
+}
+
+#Projet .card {
+    height: auto;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+#Projet .card-img-top {
+    height: 100%;
+    width: 100%;
+    max-width: 300px;
+    max-height: 500px;
+    object-fit: cover; 
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat;
+}
+
+/* ----- Actualite ----- */
+#Actualite {
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.section-title {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 2%;
+    color: #333;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+#Actualite .row {
+    justify-content: center;
+}
+
+#Actualite .card {
+    max-width: 400px;
+    margin: 0 auto;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#Actualite .card img {
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px 8px 0 0;
+}
+
+#Actualite .card-body {
+    font-size: 14px;
+    padding: 15px;
+}
+
+#Actualite .card-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-transform: capitalize;
+}
+
+#Actualite .card-text {
+    font-size: 14px;
+    line-height: 1.5;
+    color: #666;
+}
+
+
+/* ----- Formulaire ----- */
+#Formulaire {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
     box-sizing: border-box;
 }
 
-/* ----- Responsiveness ----- */
-@media (max-width: 768px) {
-    header img {
-        max-height: 40px; /* Réduit la taille du logo sur les petits écrans */
-    }
+.form-title {
+    font-size: 32px; 
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #333;
+    text-align: center;
+}
 
-    #Presentation img {
-        max-width: 120px; /* Ajuste la taille de l'image pour les petits écrans */
-    }
+.form-container {
+    width: 100%;
+    max-width: 800px; 
+    background: white;
+    padding: 30px; 
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
 
-    .custom-header {
-        font-size: 0.9rem; /* Réduit la taille de la police pour le menu */
-    }
+#Formulaire .form-label {
+    font-size: 18px; 
+    font-weight: 500; 
+    margin-bottom: 8px;
+    display: block;
+}
 
-    section {
-        padding: 10px; 
-    }
+#Formulaire .form-control {
+    font-size: 16px; 
+    padding: 12px; 
+    margin-bottom: 20px; 
+    border: 1px solid #ccc; 
+    border-radius: 5px; 
+}
+
+#Formulaire .form-control:focus {
+    border-color: #007bff; 
+    box-shadow: 0px 0px 5px rgba(0, 123, 255, 0.5);
+    outline: none;
+}
+
+#Formulaire button {
+    width: 100%; 
+    padding: 12px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+#Formulaire button:hover {
+    background-color: #0056b3;
+    cursor: pointer;
 }

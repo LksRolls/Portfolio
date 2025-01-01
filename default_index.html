@@ -8,24 +8,11 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/styles/style.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
-    
-    <!-- Favicon général -->
-    <link rel="icon" href="assets/img/Favicon/favicon.ico" type="image/x-icon">
-    <!-- Icônes PNG pour les navigateurs -->
-    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/Favicon/favicon-16x16.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/Favicon/favicon-32x32.png">
-    <!-- Icônes Android -->
-    <link rel="icon" type="image/png" sizes="192x192" href="assets/img/Favicon/android-chrome-192x192.png">
-    <link rel="icon" type="image/png" sizes="512x512" href="assets/img/Favicon/android-chrome-512x512.png">
-    <!-- Icône Apple Touch -->
-    <link rel="apple-touch-icon" href="assets/img/Favicon/apple-touch-icon.png">
-    <!-- Fichier de configuration Web App -->
-    <link rel="manifest" href="assets/img/Favicon/site.webmanifest">
 </head>
-<body class="bg-body-secondary">
+<body>
     <!-- Header -->
     <header id="navbar-example2" class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom px-5 fixed-top bg-body-secondary">
-        <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+        <a href="#Acceuil" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
             <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
             <img src="./assets/img/lukas-rolland-black.png" alt="Logo">
         </a>
@@ -40,17 +27,17 @@
 
     <main data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-root-margin="0px 0px -30%" data-bs-smooth-scroll="true" class="scrollspy-example" tabindex="0">
         <!-- Section Acceuil -->
-        <section class="d-flex justify-content-center align-items-center min-vh-100 mt-5" id="Acceuil" data-aos="fade-in">
+        <section id="Acceuil" class="d-flex justify-content-center align-items-center min-vh-100">
             <div class="text-center text-bs-gray-900 fs-2">
                 <h1>Lukas ROLLAND</h1>
                 <span id="typed-text"></span>
             </div>
         </section>
 
-        <!-- Conteneur Présentation -->
-        <section class="d-flex flex-column align-items-center min-vh-100" id="PresentationParcours" data-aos="fade-up">
-            <!-- Section Présentation -->
-            <section class="d-flex align-items-center min-vh-100" id="Presentation">
+        <!-- Section PresentationParcours -->
+        <section id="PresentationParcours">
+            <!-- Section Presentation -->
+            <section id="Presentation">
                 <div class="container">
                     <div class="row">
                         <div class="col-md-6 text-center mb-4">
@@ -60,31 +47,31 @@
                             <div class="mb-4 text-center">
                                 <p class="fw-bold mb-1">HTML</p>
                                 <div class="progress" role="progressbar" aria-label="HTML" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">
-                                    <div class="progress-bar bg-orange" style="width: 70%;">70%</div>
+                                    <div class="progress-bar bg-orange" style="width: 70%; font-size:medium; background-color: orange;">70%</div>
                                 </div>
                             </div>
                             <div class="mb-4 text-center">
                                 <p class="fw-bold mb-1">CSS</p>
                                 <div class="progress" role="progressbar" aria-label="CSS" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">
-                                    <div class="progress-bar bg-blue" style="width: 70%;">70%</div>
+                                    <div class="progress-bar bg-blue" style="width: 70%; font-size:medium; background-color: lightblue;">70%</div>
                                 </div>
                             </div>
                             <div class="mb-4 text-center">
                                 <p class="fw-bold mb-1">JavaScript</p>
                                 <div class="progress" role="progressbar" aria-label="JavaScript" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
-                                    <div class="progress-bar bg-yellow" style="width: 50%; color: black;">50%</div>
+                                    <div class="progress-bar bg-yellow" style="width: 50%; font-size:medium; color: black; background-color: yellow;">50%</div>
                                 </div>
                             </div>
                             <div class="mb-4 text-center">
                                 <p class="fw-bold mb-1">PHP</p>
                                 <div class="progress" role="progressbar" aria-label="PHP" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100">
-                                    <div class="progress-bar bg-purple" style="width: 55%;">55%</div>
+                                    <div class="progress-bar bg-purple" style="width: 55%; font-size:medium; background-color: purple;">55%</div>
                                 </div>
                             </div>
                             <div class="mb-4 text-center">
                                 <p class="fw-bold mb-1">SQL</p>
                                 <div class="progress" role="progressbar" aria-label="SQL" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
-                                    <div class="progress-bar bg-green" style="width: 75%;">75%</div>
+                                    <div class="progress-bar bg-green" style="width: 75%; font-size:medium; color: black; background-color: greenyellow;">75%</div>
                                 </div>
                             </div>
                         </div>
@@ -100,116 +87,191 @@
             </section>
 
             <!-- Section Parcours -->
-            <section class="d-flex align-items-center min-vh-100 mt-5" id="Parcours">
-                <div class="container">
-                    <div class="row mb-4">
-                        <div class="col-12 text-center">
+            <section id="Parcours">
+                    <!-- Section Formation -->
+                    <section id="Formation">
+                        <div id="FormationTitle" class="col-12 text-center">
                             <h2 class="fw-bold">Mon Parcours Éducatif</h2>
                         </div>
-                    </div>
-
-                    <div class="row">
-                        <div class="col-md-6 mb-4">
-                            <div class="card" style="width: 100%;">
-                                <img src="assets/img/Autun.jpeg" class="card-img-top" alt="Lycée Autun" loading="lazy">
+                        <!-- Card Bootstrap -->
+                        <div class="row row-cols-1 row-cols-md-2 g-4">
+                            <div class="col">
+                              <div class="card">
+                                <img src="assets/img/Autun.jpeg" class="card-img-top" alt="Lycee Militaire d'Autun">
                                 <div class="card-body">
-                                    <h5 class="card-title">Lycée Autun</h5>
-                                    <p class="card-text">J'ai fais un bac STI2D SIN (systèmes d'information et numérique) obtenu avec Mention.</p>
+                                  <h5 class="card-title">Card title</h5>
+                                  <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                                 </div>
+                              </div>
+                            </div>
+                            <div class="col">
+                              <div class="card">
+                                <img src="assets/img/Mewo.jpg" class="card-img-top" alt="MEWO">
+                                <div class="card-body">
+                                  <h5 class="card-title">Card title</h5>
+                                  <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                </div>
+                              </div>
                             </div>
                         </div>
-                        <div class="col-md-6 mb-4">
-                            <div class="card" style="width: 100%;">
-                                <img src="assets/img/Mewo.jpg" class="card-img-top" alt="Mewo Campus" loading="lazy">
+                    </section>
+
+                    <!-- Section Experience -->
+                    <section id="Experience">
+                        <div id="ExperienceTitle" class="col-12 text-center">
+                            <h2 class="fw-bold">Mon Parcours Professionel</h2>
+                        </div>
+                        <!-- Card Bootstrap -->
+                        <div class="row row-cols-1 row-cols-md-2 g-4">
+                            <div class="col">
+                              <div class="card">
+                                <img src="assets/img/Sauveteur.jpeg" class="card-img-top" alt="Sauveteur">
                                 <div class="card-body">
-                                    <h5 class="card-title">Mewo Campus</h5>
-                                    <p class="card-text">Je suis actuellement en BTS SIO SLAM (Solutions Logicielles et Applications Métiers).</p>
+                                  <h5 class="card-title">Card title</h5>
+                                  <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                                 </div>
+                              </div>
+                            </div>
+                            <div class="col">
+                              <div class="card">
+                                <img src="assets/img/Helfrich-Logo.png" class="card-img-top" alt="Helfrich">
+                                <div class="card-body">
+                                  <h5 class="card-title">Card title</h5>
+                                  <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                </div>
+                              </div>
                             </div>
                         </div>
-                    </div>
+                    </section>
+            </section>
+        </section>
 
-                    <div class="row mb-4">
-                        <div class="col-12 text-center">
-                            <h2 class="fw-bold">Mon Parcours Professionnel</h2>
+        <section id="Projet">
+            <section id="Ecole">
+                <h2 style="text-align: center; margin-bottom: 20px;">Projets pour l'École</h2>
+                <div class="card-container">
+                    <div class="card text-center" style="width: 18rem;">
+                        <img src="assets/img/scissors.svg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
                         </div>
                     </div>
-
-                    <div class="row justify-content-center">
-                        <div class="col-md-6 mb-4">
-                            <div class="card" style="width: 100%;">
-                                <img src="assets/img/Helfrich.jpg" class="card-img-top" alt="Helfrich Farrjop" loading="lazy">
-                                <div class="card-body">
-                                    <h5 class="card-title">Helfrich Farrjop</h5>
-                                    <p class="card-text">Je suis actuellement en alternance chez Helfrich en tant qu'Analyste Developpeur.</p>
-                                </div>
-                            </div>
+                    <div class="card text-center" style="width: 18rem;">
+                        <img src="assets/img/scissors.svg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
                         </div>
                     </div>
                 </div>
             </section>
-
-
-        </section>
-
-        <!-- Section Projet -->
-        <section class="container py-5 mt-5" id="Projet" data-aos="fade-right">
-        <!-- Projet Perso -->
-            <div class="row mb-5 text-center">
-            <div class="col">
-                <h2 class="fw-bold">Mes projets perso ou pour l'école</h2>
-            </div>
-            </div>
-            <div class="row justify-content-center gy-4" id="ProjetPerso">
-            <div class="col-12 col-md-6 col-lg-4 d-flex justify-content-center">
-                <div class="card" style="width: 18rem;">
-                <img src="assets/img/Seance.avif" class="card-img-top" alt="Projet Suive Séance">
-                <div class="card-body text-center">
-                    <h5 class="card-title">Projet de Suivi de Séance</h5>
-                    <p class="card-text">J'ai créé un site permettant de suivre ses séances dans n'importe quel sport et d'en sortir des statistiques.</p>
-                    <a href="#" class="btn btn-primary">Voir le projet</a>
-                </div>
-                </div>
-            </div>
-            <div class="col-12 col-md-6 col-lg-4 d-flex justify-content-center">
-                <div class="card" style="width: 18rem;">
-                <img src="assets/img/PFC.png" class="card-img-top" alt="Jeu Pierre Feuille Ciseau">
-                <div class="card-body text-center">
-                    <h5 class="card-title">Pierre Feuille Ciseau</h5>
-                    <p class="card-text">J'ai créé un jeu Pierre Feuille Ciseau pour l'école.</p>
-                    <a href="#" class="btn btn-primary">Voir le projet</a>
-                </div>
-                </div>
-            </div>
-            </div>
         
-            <!-- Projet Entreprise -->
-            <div class="row mt-5 mb-4 text-center">
-            <div class="col">
-                <h2 class="fw-bold">Mes tâches en entreprise</h2>
-            </div>
-            </div>
-            <div class="row justify-content-center" id="ProjetEntreprise">
-            <div class="col-12 text-center">
-                <h3 class="fw-bold">Projets en Entreprise</h3>
-                <p>Projets réalisés dans un cadre professionnel.</p>
-            </div>
-            </div>
+            <section id="Perso">
+                <h2 style="text-align: center; margin-bottom: 20px;">Projets Personnels</h2>
+                <div class="card-container">
+                    <div class="card text-center" style="width: 18rem;">
+                        <img src="assets/img/scissors.svg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                    <div class="card text-center" style="width: 18rem;">
+                        <img src="assets/img/scissors.svg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
         </section>
-  
-        <!-- Section Actualité -->
-        <section class="d-flex align-items-center min-vh-100 mt-5" id="Actualite" data-aos="fade-left">
-            <div class="container text-center">
-                <h1>Dernières Actualités</h1>
-                <div id="news-container"></div>
-            </div>
-        </section>
+        
+        
 
-        <!-- Section Formulaire -->
-        <section class="d-flex align-items-center min-vh-100" id="Formulaire">
-            <div class="container text-center">
-                <h2 class="fw-bold">Formulaire</h2>
-                <p>Contactez-moi en remplissant le formulaire ci-dessous.</p>
+        <section id="Actualite">
+            <h2 class="section-title">Actualités</h2>
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+                <div class="col">
+                    <div class="card">
+                        <img src="assets/img/Sauveteur.jpeg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <img src="assets/img/Sauveteur.jpeg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <img src="assets/img/Sauveteur.jpeg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <img src="assets/img/Sauveteur.jpeg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <img src="assets/img/Sauveteur.jpeg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <img src="assets/img/Sauveteur.jpeg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>        
+
+        <section id="Formulaire">
+            <h2 class="form-title">Contactez-moi</h2>
+            <div class="form-container">
+                <form id="contactForm">
+                    <div class="mb-3">
+                        <label for="Email" class="form-label">Adresse Email</label>
+                        <input type="email" class="form-control" id="Email" aria-describedby="emailHelp">
+                    </div>
+                    <div class="mb-3">
+                        <label for="Object" class="form-label">Objet</label>
+                        <input type="text" class="form-control" id="Object">
+                    </div>
+                    <div class="mb-3">
+                        <label for="Message" class="form-label">Message</label>
+                        <textarea class="form-control no-resize" id="Message" rows="5" wrap="soft"></textarea>
+                    </div>
+                    <button type="button" class="btn btn-primary" id="submitButton">Envoyer</button>
+                </form>
             </div>
         </section>
     </main>
@@ -219,8 +281,5 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-    <script>
-        AOS.init();
-    </script>
 </body>
 </html>
