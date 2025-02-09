@@ -1,0 +1,48 @@
+/* ----- General ----- */
+html, body {
+    overflow-x: hidden; 
+    background-color: whitesmoke;
+}
+
+section {
+    min-height: 110vh; 
+    scroll-margin-top: 50px; 
+    overflow-x: hidden; 
+    padding: 20px; 
+}
+
+/* ----- Header ----- */
+.custom-header:not(.active) {
+    color: #212529;
+    transition: color 0.3s ease-in-out; 
+}
+
+header img {
+    max-width: 100%;   
+    height: auto;      
+    max-height: 50px;  
+    object-fit: contain;
+    margin-right: 15px; 
+}
+
+header {
+    width: 100%; 
+    box-sizing: border-box;
+}
+
+/* ----- Acceuil ----- */
+h2{
+    text-align: center;
+    padding: 8%;
+}
+
+/* ----- Bouton ----- */
+.btn-primary {
+    background-color: rgb(13, 141, 141) !important; 
+    border: none !important;
+}
+
+.btn-primary:hover {
+    background-color: rgb(13, 141, 141) !important;
+    border-color: none !important;
+}

@@ -1,4 +1,4 @@
-/* ----- General ----- */
+/* ----------- General ----------- */
 html, body {
     overflow-x: hidden; 
     background-color: whitesmoke;
@@ -8,13 +8,150 @@ section {
     min-height: 110vh; 
     scroll-margin-top: 50px; 
     overflow-x: hidden; 
-    padding: 20px; 
+    padding: 50px 0; 
 }
 
-/* ----- Header ----- */
+img{
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h2{
+    font-size: 1.8em;
+    text-align: center;
+}
+
+/* couleurs des boutons */
+.btn-primary {
+    background-color: rgb(13, 141, 141)  !important; 
+    border-color: none !important;
+}
+
+.btn-primary:hover {
+    background-color: rgb(13, 141, 141) !important;
+    border-color: none !important;
+}
+
+.btn-primary:active {
+    background-color: rgb(13, 141, 141) !important;
+    border-color: none !important;
+}
+
+.dropdown button {
+    width: 100%; 
+    margin: 10%;
+    max-width: 300px;
+    border: none;
+}
+
+/* ----------- Cards General ----------- */
+.Cards {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center;
+    gap: 5%; 
+    padding: 5%;
+}
+
+.Card {
+    width: 100%; 
+    max-width: 100%; 
+    background: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: center;
+    margin-bottom: 5%;
+    transition: transform 0.3s ease-in-out;
+}
+
+.Card:hover {
+    transform: scale(1.05);
+}
+
+.imgCards {
+    width: 100%;
+    height: 50%;
+    object-fit: cover;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.Card h3 {
+    padding-top: 3%;
+    font-size: 1.4em;
+    font-weight: bold;
+}
+
+.Card h5 {
+    padding: 5%;
+    font-size: 1.2em;
+}
+
+/* ----------- Cards Bouton ----------- */
+.CardsB {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center; 
+    gap: 1%; 
+    margin-top: 3%;
+}
+
+.CardB {
+    width: 100%; 
+    max-width: 100%; 
+    height: 150%;
+    overflow: hidden;
+    text-align: center;
+    margin-bottom: 5%;
+    transition: transform 0.3s ease-in-out;
+}
+
+.CardB h4 {
+    font-size: 1.5rem;
+    margin-bottom: 5%;
+    color: black;
+    min-height: 60px
+}
+
+.LogoCard {
+    width: 200px; 
+    height: 200px; 
+    margin-top: 20%; 
+    object-fit: contain;
+    display: block; 
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.CardB .btn {
+    margin-top: 10%;
+    border: none;
+    padding: 2%;
+}
+
+/* ----------- Header ----------- */
+header {
+    width: 100%; 
+    box-sizing: border-box;;
+}
+
 .custom-header:not(.active) {
     color: #212529;
     transition: color 0.3s ease-in-out; 
+}
+
+.nav-link.active.custom-header {
+    background-color: rgb(13, 141, 141); 
+    color: white; 
+    transition: background-color 0.3s ease; 
+}
+
+.custom-header:active {
+    color: #fff;
 }
 
 header img {
@@ -25,223 +162,106 @@ header img {
     margin-right: 15px; 
 }
 
-.custom-header:active {
-    color: #fff;
-}
-
-header {
-    width: 100%; 
-    box-sizing: border-box;
-}
-
-/* ----- Acceuil ----- */
-
-
-/* ----- PresentationParcours ----- */
-/* ----- Presentation ----- */
+/* ----------- Presentation ----------- */
 #Presentation .container{
-    margin-top: 10%;
+    margin-top: 8%;
 }
 
-/* ----- Parcours ----- */
-#Parcours .card {
-    border: none; 
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
-    margin: 15px; 
-    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between; 
-    height: 100%;
-}
+/* ----------- Formation ----------- */
 
-#Parcours .card:hover {
-    transform: translateY(-10px); 
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
-}
 
-#Parcours .card-img-top {
-    border-top-left-radius: calc(0.25rem - 1px);
-    border-top-right-radius: calc(0.25rem - 1px);
-    object-fit: cover;
-    height: 300px; 
-}
+/* ----------- Experience ----------- */
 
-#Parcours .card-body {
-    flex-grow: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between; 
-}
 
-#Parcours #ExperienceTitle,#FormationTitle{
-    margin: 3% 0;
-}
+/* ---- ProjetAlternance ---- */
 
-#Parcours img{
-    background-size: cover; 
-    background-position: center; 
-    background-repeat: no-repeat;
-}
 
-/* ---- Projet ---- */
-#Projet .card-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 30px; 
-    margin: 10px 0;
-}
 
-#Projet h2 {
-    font-size: 26px;
-    font-weight: bold;
-    text-transform: uppercase;
-    color: #333;
-    margin-bottom: 1.5%; 
-}
-
-#Ecole, #Perso {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    margin-bottom: 30px; 
-}
-
-#Projet .card {
-    height: auto;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); 
-}
-
-#Projet .card-img-top {
-    height: 100%;
-    width: 100%;
-    max-width: 300px;
-    max-height: 500px;
-    object-fit: cover; 
-    background-size: cover; 
-    background-position: center; 
-    background-repeat: no-repeat;
-}
-
-/* ----- Actualite ----- */
-#Actualite {
+/* ----- Formulaire de contact ----- */
+#Formulaire{
+    margin: auto;
+    margin-bottom: 5%;
     text-align: center;
-    padding: 100px 20px;
+    width:60%;
+    min-height: 70vh; 
 }
 
-.section-title {
-    font-size: 36px;
-    font-weight: bold;
-    margin-bottom: 2%;
-    color: #333;
-    text-align: center;
-    text-transform: uppercase;
+#Formulaire div{
+    margin: 2% 0;
 }
 
-#Actualite .row {
-    justify-content: center;
+#Formulaire label{
+    margin-top : 0.5%;
 }
 
-#Actualite .card {
-    max-width: 400px;
-    margin: 0 auto;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+#FormMessage{
+    padding: 5%;
+    text-align:start;
 }
 
-#Actualite .card img {
-    height: 200px;
-    object-fit: cover;
-    border-radius: 8px 8px 0 0;
+#Formulaire .form-check{
+    text-align: justify;
+    margin-left: 40%;
 }
 
-#Actualite .card-body {
-    font-size: 14px;
-    padding: 15px;
-}
-
-#Actualite .card-title {
-    font-size: 18px;
-    font-weight: bold;
-    margin-bottom: 10px;
-    text-transform: capitalize;
-}
-
-#Actualite .card-text {
-    font-size: 14px;
-    line-height: 1.5;
-    color: #666;
-}
-
-
-/* ----- Formulaire ----- */
-#Formulaire {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    padding: 20px;
-    box-sizing: border-box;
-}
-
-.form-title {
-    font-size: 32px; 
-    font-weight: bold;
-    margin-bottom: 20px;
-    color: #333;
-    text-align: center;
-}
-
-.form-container {
-    width: 100%;
-    max-width: 800px; 
-    background: white;
-    padding: 30px; 
-    border-radius: 8px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-    text-align: center;
-}
-
-#Formulaire .form-label {
-    font-size: 18px; 
-    font-weight: 500; 
-    margin-bottom: 8px;
-    display: block;
-}
-
-#Formulaire .form-control {
-    font-size: 16px; 
-    padding: 12px; 
-    margin-bottom: 20px; 
-    border: 1px solid #ccc; 
-    border-radius: 5px; 
-}
-
-#Formulaire .form-control:focus {
-    border-color: #007bff; 
-    box-shadow: 0px 0px 5px rgba(0, 123, 255, 0.5);
-    outline: none;
-}
-
-#Formulaire button {
-    width: 100%; 
-    padding: 12px 20px;
-    font-size: 18px;
-    font-weight: bold;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    background-color: #007bff;
-    color: white;
-    border: none;
+#infoPlusContain {
+    display: none;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 70%;
+    background-color: rgb(13, 141, 141)  !important; 
+    color: whitesmoke;
+    border: #212529;
     border-radius: 5px;
-    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 3%;
+    z-index: 1;
+    text-align: center;
 }
 
-#Formulaire button:hover {
-    background-color: #0056b3;
+#infoPlus:hover + #infoPlusContain {
+    display: block !important;
     cursor: pointer;
+}
+
+#infoPlusContain:hover{
+    display: block !important;
+    cursor: pointer;
+}
+
+
+/* ----------- Responsive ----------- */
+@media (min-width: 600px) {
+    .Cards {
+        justify-content: center; 
+    }
+    
+    .Card {
+        width: calc(50% - 20px); /* 2 par ligne */
+    }
+
+    .CardB {
+        width: calc(50% - 20px); /* 2 par ligne */
+    }
+}
+
+@media (min-width: 900px) {
+    .Card {
+        width: calc(33.33% - 20px); /* 3 par ligne */
+    }
+
+    .CardB {
+        width: calc(33.33% - 20px); /* 3 par ligne */
+    }
+}
+
+@media (min-width: 1200px) {
+    .Card {
+        width: calc(24% - 20px); /* 4 par ligne */
+    }
+
+    .CardB {
+        width: calc(24% - 20px); /* 4 par ligne */
+    }
 }

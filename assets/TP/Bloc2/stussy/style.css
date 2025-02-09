@@ -1,0 +1,234 @@
+body {
+    margin: 0;
+    padding: 0;
+    text-rendering: optimizeLegibility;
+    font-feature-settings: "kern";
+    -webkit-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+    font-family: HelveticaNeue,sans-serif;
+    font-size: .75rem;
+    line-height: 1.0625rem;
+    overflow: hidden;
+}
+
+header {
+    color: black;
+    display: grid;
+    grid-template-columns: auto auto repeat(3, auto) 1fr auto;
+    align-items: center;
+    padding-top:0;
+    padding-bottom:0;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.logo {
+    font-size: 1.5em;
+    display: flex;
+    flex-direction: row;
+}
+
+#imglogo {
+    width: 100px;
+    height: auto;
+    margin-right: 10px;
+}
+
+.first-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    box-shadow: 0 1px 1px #F2F2F2;
+}
+
+.left-buttons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+}
+
+.second-header {
+    color: black;
+    padding: 15px;
+    display: grid;
+    grid-template-columns: repeat(12, auto) 1fr auto;
+    align-items: center;
+    box-shadow: 0 1px 1px #F2F2F2;
+    padding-top: 20px;
+}
+
+.additional-buttons {
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+    left: 125px;
+}
+
+.first-header nav a:hover {
+    font-weight: bold;
+}
+
+.second-header nav a:hover {
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.image-container {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.image-container img {
+    width: 100%;
+    max-width: 90%;
+    height: 450px;
+    transition: box-shadow 0.3s ease;
+}
+
+.image-container img:hover {
+    opacity: 80%;
+}
+
+.upper-footer {
+    padding: 15px;
+    color: black;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.upper-footer .left-buttons ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.upper-footer .left-buttons li {
+    margin-right: 20px;
+}
+
+.upper-footer .left-buttons a {
+    text-decoration: none;
+    color: black;
+}
+
+.upper-footer .right-content {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding-right: 10px;
+}
+
+.lower-footer {
+    padding: 15px;
+    color: black;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.lower-footer .left-buttons ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.lower-footer .left-buttons li {
+    margin-right: 20px;
+}
+
+.lower-footer .left-buttons a {
+    text-decoration: none;
+    color: black;
+}
+
+.lower-footer .right-content {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    padding-right: 10px;
+}
+
+.upper-footer .left-buttons a:hover{
+    font-weight: bold;
+}
+
+.lower-footer .left-buttons a:hover{
+    font-weight: bold;
+}
+
+.lower-footer .right-content a:hover {
+    font-weight: bold;
+}
+
+/* test page support */
+
+.signup-form {
+    float: left;
+    margin: 50px;
+    padding-left: 6%;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.signup-form h2 {
+    margin-bottom: 20px;
+}
+
+.signup-form label {
+    margin-bottom: 5px;
+}
+
+.signup-form input {
+    margin-bottom: 20px;
+    padding: 5px;
+    width: 100%;
+    max-width: 300px;
+}
+
+.signup-form button {
+    background-color: #000000;
+    color: #ffffff;
+    padding: 10px;
+    width: 100%;
+    max-width: 300px;
+    cursor: pointer;
+}
+
+.signup-form button:hover {
+    background-color: #333333;
+}
+
+.signup-form label,
+.signup-form input,
+.signup-form button {
+    display: block;
+    margin-bottom: 5%;
+}

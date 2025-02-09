@@ -1,0 +1,288 @@
+/* Réinitialisation des styles de base */
+body {
+    margin: 0;
+    padding: 0;
+    text-rendering: optimizeLegibility;
+    font-feature-settings: "kern";
+    font-smoothing: antialiased;
+    -webkit-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+    font-family: HelveticaNeue, sans-serif;
+    font-size: .75rem;
+    line-height: 1.0625rem;
+}
+
+.global-header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+/* Styles communs pour les en-têtes */
+header {
+    color: black;
+    padding: 15px;
+    display: grid;
+    grid-template-columns: auto auto repeat(3, auto) 1fr auto; /* Logo, espace, trois premiers boutons, espace flexible, et les deux boutons à droite */
+    align-items: center;
+}
+
+/* Styles pour le logo */
+.logo {
+    font-size: 1.5em;
+    display: flex;
+    flex-direction: row;
+}
+
+#imglogo {
+    width: 100px;
+    height: auto;
+    margin-right: 10px; /* Ajout de la marge à droite du logo pour l'éloigner des boutons */
+}
+
+.first-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: white;
+    padding-bottom: 0;
+    padding-top: 0;
+    position: relative;
+    z-index: 1;
+    box-shadow: 0px 1px 1px #F2F2F2;
+}
+
+.left-buttons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+/* Styles pour les boutons dans les en-têtes */
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+}
+
+.second-header {
+    color: black;
+    padding: 15px;
+    display: grid;
+    grid-template-columns: repeat(12, auto) 1fr auto;
+    align-items: center;
+    background-color: white;
+    box-shadow: 0px 1px 1px #F2F2F2;
+}
+
+.additional-buttons {
+    display: flex;
+    gap: 20px;
+}
+
+/* Ajoutez ces styles pour positionner les boutons dans la deuxième en-tête */
+.second-header .left-buttons {
+    grid-column: 1; /* Bouton "RETOUR A LA PAGE PRECEDENTE" à gauche */
+    margin-right: auto; /* Espacement à gauche */
+}
+
+.second-header .right-buttons {
+    grid-column: -1; /* Bouton "ARTICLE SUIVANT" à droite */
+    margin-left: auto; /* Espacement à droite */
+}
+
+.second-header .left-buttons button,
+.second-header .right-buttons button {
+    background-color: transparent;
+    border: none;
+}
+
+.second-header .left-buttons button:hover,
+.second-header .right-buttons button:hover {
+    background-color: transparent;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.first-header nav a:hover {
+    font-weight: bold;
+}
+
+.second-header nav a:hover {
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.image-container {
+    margin-top: 20px;
+    text-align: center;
+    overflow-y: auto;
+    padding-left: 30px;
+    padding-top: 110px;
+    margin-right: 430px; /* Ajout de la marge à droite pour laisser de l'espace au texte fixe */
+}
+
+.bas1 {
+}
+
+.bas2 {
+    border: 1px solid black;
+}
+
+.taille {
+    padding-top: 10px;
+}
+
+/* Ajoutez ces styles pour les images empilées */
+.image-grid {
+    text-align: left; /* Aligner les images à gauche */
+}
+
+.image-grid img {
+    width: 70%; /* Ajustez la largeur à 50% pour occuper la moitié de l'écran */
+    max-width: 100%; /* La largeur maximale ne dépasse pas la taille de l'écran */
+    margin-left: 25px; /* Aligner à gauche en retirant la marge gauche */
+    margin-bottom: 20px; /* Espacement entre les images */
+}
+
+.text-container {
+    text-align: left;
+    margin-top: 0;
+    padding-top: 170px;
+    padding-right: 220px;
+    margin-left: auto; /* Ajout pour positionner à droite */
+    position: fixed; /* Ajout pour rendre fixe */
+    right: 0; /* Ajout pour aligner le conteneur à droite */
+    top: 0; /* Ajout pour aligner le conteneur en haut */
+    width: 300px; /* Ajout d'une largeur fixe (ajustez selon vos besoins) */
+}
+
+.text-container h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.text-container p {
+    margin-bottom: 10px;
+}
+
+.text-container img {
+    width: 70%; /* Assurez-vous que les images occupent la largeur complète du conteneur */
+    max-width: 40px; /* Limitez la largeur maximale des images pour éviter leur agrandissement excessif */
+    margin-bottom: 10px;
+}
+
+.text-container a {
+    padding-bottom: 100px;
+}
+
+/* Styles pour les nouveaux éléments ajoutés */
+.text-container .taille {
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    margin-top: 5px;
+    background-color: white;
+}
+
+.text-container button:hover {
+    font-weight: bold;
+}
+
+.text-container button {
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    background-color: white;
+}
+
+.bouton-container {
+    position: fixed;
+    bottom: 20px; /* Ajustez la valeur en fonction de votre mise en page */
+    right: 20px; /* Ajustez la valeur en fonction de votre mise en page */
+}
+
+.bouton-container .bas1,
+.bouton-container .bas2 {
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    margin-top: 5px;
+    padding: 15px;
+    width: 335px;
+}
+
+.bouton-container .bas1 {
+    background-color: black;
+    color: white;
+    border: 1px solid black;
+    margin-right: 15px;
+}
+
+.bouton-container .bas2 {
+    background-color: white;
+    color: grey;
+    border: 1px solid black;
+    margin-right: 0;
+}
+
+    .bouton-container .bas1:hover,
+    .bouton-container .bas2:hover {
+    filter: brightness(85%); /* Légère diminution de la luminosité au survol */
+}
+
+/* Ajout de styles pour le main */
+main {
+    padding-top: 20px; /* Ajout d'un espacement en haut du main pour éviter le chevauchement avec l'en-tête fixe */
+}
+
+/* Ajout de styles pour le pied de page */
+footer {
+    color: black;
+    padding: 15px;
+    display: grid;
+    grid-template-columns: 1fr auto; /* Deux colonnes, la première occupant l'espace restant, la deuxième avec une largeur automatique */
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+footer li {
+    margin-right: 20px;
+}
+
+footer a {
+    text-decoration: none;
+    color: black;
+}
+
+footer .right-content {
+    display: flex;
+    align-items: center; /* Ajout pour aligner les éléments verticalement au centre */
+    gap: 10px;
+    padding-right: 10px;
+}
+
+/* Ajout de styles pour les liens dans le pied de page */
+footer a:hover {
+    font-weight: bold;
+}
